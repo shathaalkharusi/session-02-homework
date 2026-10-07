@@ -19,3 +19,11 @@
 const cities = ["Muscat", "Salalah", "Sohar", "Nizwa", "Sur"];
 
 // your code here
+console.log(`Number of citiies: ${cities.length}`);
+
+console.log(`First: ${cities[0]}`);
+console.log(`Last: ${cities.length - 1}`);
+
+for(let i=0; i< cities.length;i++){
+    console.log(`${i+1}. ${cities[i]}`);
+}
