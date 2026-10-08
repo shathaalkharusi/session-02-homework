@@ -34,7 +34,12 @@ let newestBook= books[0];
 for(let i=0; i<books.length;i++){
   const book = books[i];
 
-  const status = book.available? "available": "checked out";
+  let status="";
+  if(book.available=== true){
+    status="available";
+  } else {
+    status="checked out"
+  }
   console.log(`${book.title} by ${book.author} (${book.year}) -${status}`);
 
   if (book.available){
